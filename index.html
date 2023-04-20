@@ -1,0 +1,323 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+	}
+	
+	h1 {
+		font-size:32px;
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+	
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		15px 15px 0 0px #fff, /* The fourth layer */
+		15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		20px 20px 0 0px #fff, /* The fifth layer */
+		20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		25px 25px 0 0px #fff, /* The fifth layer */
+		25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	
+	.vert-cent {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+
+<html>
+<head>
+	<title>Few-shot Diagnosis of Chest x-rays Using an Ensemble of Random Discriminative Subspaces</title>
+	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+	<meta property="og:title" content="Few-shot Diagnosis of Chest x-rays Using an Ensemble of Random Discriminative Subspaces" />
+	<meta property="og:description" content="Paper description." />
+
+	<!-- Get from Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src=""></script> 
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-75863369-6');
+	</script>
+</head>
+
+<body>
+	<br>
+	<center>
+		<span style="font-size:36px">Few-shot Diagnosis of Chest x-rays Using an Ensemble of Random Discriminative Subspaces</span>
+		<table align=center width=600px>
+			<table align=center width=600px>
+				<tr>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://in.linkedin.com/in/kshitiz-616b72195">Kshitiz</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://in.linkedin.com/in/garvit-garg">Garvit Garg</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://sites.google.com/view/angshumanpaul/home">Angshuman Paul</a></span>
+						</center>
+					</td>
+				</tr>
+			</table>
+			<table align=center width=250px>
+				<tr>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href='https://openreview.net/pdf?id=AF97JZpgPe'>[Paper]</a></span>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href='https://github.com/Few-shot-Learning-on-chest-x-ray/fsl_subspace'>[GitHub]</a></span><br>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</table>
+	</center>
+
+	<center>
+		<table align="center" width="850px">
+		  <tr>
+			<td width="260px">
+			  <center>
+				<img class="round" style="width:850px" src="./resources/teaser.png"/>
+			  </center>
+			</td>
+		  </tr>
+		</table>
+		<table align="center" width="850px">
+		  <tr>
+			<td>
+			  <em><center>Sample prediction (P) by the proposed method and the ground truth (GT). Correct and incorrect detections are marked in green and red, respectively.</center></em>
+			</td>
+		  </tr>
+		</table>
+	  </center>
+
+	<hr>
+
+
+	<table align=center width=850px>
+		<tr>
+		  <td>
+			<center><h1>Abstract</h1></center>
+			<p>Due to the scarcity of annotated data in the medical domain, few-shot learning may be useful for medical image analysis tasks. We design a few-shot learning method using an ensemble of random subspaces for the diagnosis of chest x-rays (CXRs). Our design is computationally efficient and almost 1.8 times faster than method that uses the popular truncated singular value decomposition (t-SVD) for subspace decomposition. The proposed method is trained by minimizing a novel loss function that helps create well-separated clusters of training data in discriminative subspaces. As a result, minimizing the loss maximizes the distance between the subspaces, making them discriminative and assisting in better classification. Experiments on large-scale publicly available CXR datasets yield promising results.</p>
+		  </td>
+		</tr>
+	</table>
+	<br>
+
+	<table align=center width=850px>
+		<hr>
+		<tr>
+		  <td>
+			<center><h1>Proposed Method</h1></center>
+			<p>The proposed method is designed for few-shot diagnosis of chest x-ray (CXR) images using an ensemble of random subspaces. It consists of three stages:</p>
+			<ol>
+			  <li>Feature extraction module (FEM) that extracts visual feature vectors from x-ray images.</li>
+			  <li>Subspace embedding module (SEM) that projects the feature vectors into multiple random discriminative subspaces.</li>
+			  <li>Final decision module (FDM) that assigns a final class label to an input x-ray image based on the projections.</li>
+			</ol>
+			<p>The SEM creates an ensemble of discriminative subspaces to explore different combinations of visual features obtained from small data samples, resulting in improved classification accuracy. In addition, the proposed method includes a novel loss component that makes these subspaces class discriminative, providing a faster alternative to existing computationally intensive subspace decomposition techniques such as truncated singular value decomposition.</p>
+			<p>The major contributions of this paper are:</p>
+			<ul>
+			  <li>Proposal of a method for few-shot chest x-ray diagnosis using an ensemble of random subspaces.</li>
+			  <li>Incorporation of multiple modules along with a novel loss component that improves classification accuracy.</li>
+			  <li>Providing a faster alternative to existing computationally intensive subspace decomposition techniques.</li>
+			</ul>
+		  </td>
+		</tr>
+	</table>
+	  
+	<table align=center width=800px>
+		<br>
+		<tr>
+			<center>
+				<span style="font-size:28px"><a href=''>[Poster]</a>
+				</span>
+			</center>
+		</tr>
+	</table>
+	<hr>
+
+	<center><h1>Code</h1></center>
+
+	<table align=center width=420px>
+		<center>
+			<tr>
+				<td>
+				</td>
+			</tr>
+		</center>
+	</table>
+	<table align=center width=400px>
+		<tr>
+			<td align=center width=400px>
+				<center>
+					<td><img class="round" style="width:850px" src="./resources/method_diagram.png"/></td>
+				</center>
+			</td>
+		</tr>
+	</table>
+	<table align=center width=850px>
+		<center>
+			<tr>
+				<td>
+					<p><center><i>Pipeline of the proposed method</i></center></p>
+					<p>The proposed method has three modules: feature extraction, subspace embedding, and final decision. Feature extraction extracts visual features, subspace embedding projects feature vectors into multiple subspaces for class assignment, and final decision produces the output label based on these assignments.</p>                
+				</td>
+			</tr>
+		</center>
+	</table>	
+	<table align=center width=800px>
+		<br>
+		<tr><center>
+			<span style="font-size:28px">&nbsp;<a href='https://github.com/Few-shot-Learning-on-chest-x-ray/fsl_subspace'>[GitHub]</a>
+			</center>
+		</span>
+	</table>
+	<br>
+	<hr>
+	<table align=center width=450px>
+		<center><h1>Paper and Supplementary Material</h1></center>
+		<tr>
+			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
+			<td><span style="font-size:14pt">Kshitiz, Garvit Garg, Angshuman Paul<br>
+				<b>Few-shot Diagnosis of Chest x-rays Using an Ensemble of Random Discriminative Subspaces</b><br>
+				In ICLR MLGH Workshop, 2023.<br>
+				(hosted on <a href="">OpenReview</a>)<br>
+				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
+				<span style="font-size:4pt"><a href="https://openreview.net/pdf?id=AF97JZpgPe"><br></a>
+				</span>
+			</td>
+		</tr>
+	</table>
+	<br>
+
+	<table align=center width=600px>
+		<tr>
+			<td><span style="font-size:14pt"><center>
+				<a href="./resources/bibtex.txt">[Bibtex]</a>
+			</center></td>
+		</tr>
+	</table>
+
+	<hr>
+	<br>
+
+	<table align=center width=900px>
+		<tr>
+			<td width=400px>
+				<left>
+					<center><h1>Acknowledgements</h1></center>
+					This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
+				</left>
+			</td>
+		</tr>
+	</table>
+
+<br>
+</body>
+</html>
+

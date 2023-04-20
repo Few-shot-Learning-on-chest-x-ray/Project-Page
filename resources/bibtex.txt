@@ -1,0 +1,8 @@
+@inproceedings{
+kshitiz2023fewshot,
+title={Few-shot Diagnosis of Chest x-rays Using an Ensemble of Random Discriminative Subspaces},
+author={Kshitiz and Garvit Garg and Angshuman Paul},
+booktitle={2023 ICLR First Workshop on {\textquotedblleft}Machine Learning {\&} Global Health{\textquotedblright}},
+year={2023},
+url={https://openreview.net/forum?id=AF97JZpgPe}
+}
